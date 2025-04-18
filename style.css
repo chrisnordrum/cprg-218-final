@@ -129,33 +129,29 @@ h2, h3, cite {
 
 /* Background Image */
 #header-home {
-    background-image: url(/images/hero/rumman-amin-s3o2rkTkF7I-unsplash.jpg);
+    background-image: url(/images/hero/home.webp);
 }
 
 #header-rooms {
-    background-image: url(/images/hero/roberto-nickson-RiOhen_OLPs-unsplash.jpg);
+    background-image: url(/images/hero/rooms.webp);
 }
 
 #header-activities {
-    background-image: url(/images/hero/woman-6803845.jpg);
-    background-position: bottom center;
+    background-image: url(/images/hero/activities.webp);
 }
 
 #header-dining {
-    background-image: url(/images/hero/ricardo-jimenez-Kzft6vrwRoM-unsplash.jpg);
+    background-image: url(/images/hero/dining.webp);
 }
 
 #header-spa {
-    background-image: url(/images/hero/pexels-john-tekeridis-21837-3212164.jpg);
+    background-image: url(/images/hero/spa.webp);
 }
 
 #header-testimonials {
-    background-image: url(/images/hero/walking-2498657_1920.jpg);
+    background-image: url(/images/hero/testimonials.webp);
 }
 
-#header-home, #header-rooms, #header-dining, #header-spa, #header-testimonials {
-    background-position: center;
-}
 
 /* Basic Styling */
 header {
@@ -163,6 +159,7 @@ header {
     display: flex;
     min-height: 100vh;
     background-size: cover;
+    background-position: center;
     background-color: #464646;
     background-blend-mode: overlay;
     color: white;
