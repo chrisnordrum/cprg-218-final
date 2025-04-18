@@ -1,0 +1,754 @@
+
+
+/* || CSS RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || GENERAL STYLES */
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+/* Buttons */
+
+.aBTN {
+    display: block;
+    margin: 4rem 1rem 2rem 1rem;
+    border: 1px solid #666A86;
+    padding: 1rem;
+    text-align: center;
+}
+
+.aBTN:hover {
+    border: 1px solid #001514;
+    background-color: #001514;
+    color: ghostwhite;
+}
+
+/* || TYPOGRAPHY */
+
+/* Font-size */
+
+a {
+    font-weight: 300;
+}
+
+/* Font-family */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1 {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+}
+
+h2, h3, cite, strong {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+p, a {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.h2 {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+p {
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+.p1 {
+    max-width: 768px;
+}
+
+#hero p {
+    font-size: 1rem;
+}
+
+menu button {
+    font-size: 1.125rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+small {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+/* Icons */
+.fa-umbrella-beach, .fa-water-ladder, .fa-hand-sparkles, .fa-utensils {
+    font-size: 2rem;
+}
+
+/* || COLOUR PALETTE */
+
+/* Background */
+main, footer {
+    background-color: ghostwhite;
+}
+
+/* Text */
+h1, .p1 {
+    color: ghostwhite;
+}
+
+h2, h3, cite {
+    color: #001514; /* Rich black */
+}
+
+.p2, .aBTN, small, .fa-quote-left, .fa-quote-right {
+    color: #666A86; /* Payne's gray */
+}
+
+/* Accent */
+.fa-umbrella-beach, .fa-water-ladder, .fa-hand-sparkles, .fa-utensils, .fa-bell-concierge, .fa-asterisk, .fa-star {
+    color: #5B8C5A; /* Sea Green */
+}
+
+/* || HEADER AND NAVIGATION */
+
+/* Background Image */
+#header-home {
+    background-image: url(/images/hero/rumman-amin-s3o2rkTkF7I-unsplash.jpg);
+}
+
+#header-rooms {
+    background-image: url(/images/hero/roberto-nickson-RiOhen_OLPs-unsplash.jpg);
+}
+
+#header-activities {
+    background-image: url(/images/hero/woman-6803845.jpg);
+    background-position: bottom center;
+}
+
+#header-dining {
+    background-image: url(/images/hero/ricardo-jimenez-Kzft6vrwRoM-unsplash.jpg);
+}
+
+#header-spa {
+    background-image: url(/images/hero/pexels-john-tekeridis-21837-3212164.jpg);
+}
+
+#header-testimonials {
+    background-image: url(/images/hero/walking-2498657_1920.jpg);
+}
+
+#header-home, #header-rooms, #header-dining, #header-spa, #header-testimonials {
+    background-position: center;
+}
+
+/* Basic Styling */
+header {
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    background-size: cover;
+    background-color: #464646;
+    background-blend-mode: overlay;
+    color: white;
+}
+
+#navbar {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0.75rem 1rem;
+    background-color: rgb(0, 0, 0, 0.05);
+}
+
+/* Weather Widget */
+#weather-widget {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 1px 1px 2px gray;
+    border-radius: 8px;
+    padding: 0.1rem 0.5rem;
+    background-color: rgb(211, 211, 211, 0.1rem);
+}
+
+#weatherIcon {
+    margin: -0.688rem;
+    max-width: 50px;
+}
+
+/* Logo */
+#navbar a:first-of-type img {
+    max-width: 150px;
+}
+
+/* Hamburger Button */
+#button-container {
+    justify-content: flex-end;
+    display: flex;
+    width: 50px;
+}
+
+#hamburger {
+    z-index: 2;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#hamburger .line {
+    display: block;
+    transition: all 0.3s ease-in-out;
+    margin: 6px;
+    width: 25px;
+    height: 2.5px;
+    background-color: white;
+}
+
+/* Hamburger Animation */
+#hamburger.is-active .line:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+}
+
+#hamburger.is-active .line:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger.is-active .line:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+}
+
+/* Navigation */
+nav {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    right: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    width: 100%;
+    height: 0;
+    backdrop-filter: blur(10px);
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    display: block;
+    border-top: 0.5px solid white;
+    padding: 1.5rem;
+    text-align: center;
+    color: inherit;
+}
+
+/* Nav Animation */
+nav.active {
+    height: 100vh;
+    text-decoration: none;
+}
+
+/* Header Text */
+#hero {
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    display: flex;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+/* || FOOTER AND COPYRIGHT */
+
+footer {
+    padding: 0 1rem;
+    text-align: center;
+}
+
+footer small {
+    display: block;
+    border-top: 1px solid #666A86;
+    padding: 2rem 0;
+}
+
+/* || PAGE STYLING */
+
+main {
+    padding: 1rem;
+}
+
+section {
+    padding-bottom: 1rem;
+}
+
+article {
+    padding-top: 5rem;
+}
+
+.center-align {
+    text-align: center;
+}
+
+/* Tab Menu */
+menu {
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid #001514;
+    list-style: none;
+}
+
+menu li {
+    flex: 1;
+}
+
+menu button {
+    border: none;
+    width: 100%;
+    padding: 1.25rem 0;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+menu button:hover {
+    border-bottom: 4px solid #001514;
+}
+
+menu button.active {
+    border-bottom: 4px solid #001514;
+    font-weight: 500;
+}
+
+/* Text-image Section */
+.text-image {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    display: flex;
+    padding: 3rem 0;
+}
+
+.text-image div {
+    flex-direction: column;
+    gap: 1rem;
+    display: flex;
+}
+
+.text-image ul {
+    list-style: none;
+}
+
+.text-image li {
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem;
+    display: flex;
+}
+
+.text-image img {
+    max-width: 2175px;
+    aspect-ratio: 1.618 / 1; /* Golden Ratio */
+    object-fit: cover;
+}
+
+/* Moments Section */
+#moments {
+    border-top: 0.5px dotted gray;
+}
+
+#moments .flexbox {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    display: flex;
+    margin-top: 2rem;
+}
+
+#moments .flexbox div {
+    flex: 1;
+    flex-direction: column;
+    gap: 0.5rem;
+    display: flex;
+    box-shadow: 0px 1px 3px rgba(128, 128, 128, 0.394);
+    min-width: 200px;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* rooms-home */
+#rooms-home {
+    background-image: url(/images/roberto-nickson-RiOhen_OLPs-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #464646;
+    background-blend-mode: overlay;
+}
+
+#rooms-home h2 {
+    padding-top: 5rem;
+    color: ghostwhite;
+}
+
+#rooms-home article {
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0px 1px 3px rgba(128, 128, 128, 0.394);
+    min-width: 320px;
+    height: 100%;
+    padding-top: 0;
+    background-color: ghostwhite;
+}
+
+#rooms-home img {
+    min-height: 100%;
+    aspect-ratio: 1.618 / 1; /* Golden Ratio */
+    object-fit: cover;
+}
+
+#rooms-home div {
+    padding: 2rem;
+}
+
+#rooms-home p {
+    margin: 1rem 0;
+}
+
+/* Testimonials */
+.flexbox {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    display: flex;
+}
+
+figure {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0px 1px 3px rgba(128, 128, 128, 0.394);
+    min-width: 300px;
+    max-height: 15rem;
+}
+
+figure img {
+    max-width: 38.2%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+figcaption {
+    max-width: 61.2%;
+    padding: 2rem;
+}
+
+.fa-quote-left, .fa-quote-right {
+    font-size: 1.5rem;
+}
+
+.fa-quote-left {
+    margin-bottom: 0.5rem;
+}
+
+.fa-quote-right {
+    float: right;
+    margin-top: 0.5rem;
+}
+
+cite {
+    display: block;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+}
+
+/* || ACTIVITIES PAGE */
+.tab-content h3, .tab-content2 h3 {
+    display: none;
+}
+
+.tab-content .flexbox li, .tab-content2 .flexbox li {
+    flex-direction: column;
+    flex: 1;
+    gap: 0.5rem;
+    display: flex;
+    box-shadow: 0px 1px 3px rgba(128, 128, 128, 0.394);
+    min-width: 320px;
+    padding: 1rem;
+}
+
+.tab-content .flexbox li img, .tab-content2 .flexbox li img {
+    aspect-ratio: 1.618 / 1;
+    object-fit: cover;
+}
+
+/* Information Section */
+#info {
+    margin: 5rem auto;
+    box-shadow: 0px 1px 3px rgba(128, 128, 128, 0.394); 
+    max-width: 768px;
+    padding: 5rem;
+    background-color: #001514;
+    line-height: 2rem;
+    color: ghostwhite;
+}
+
+#info h2, #info h3 {
+    margin-bottom: 1rem;
+    color: inherit;
+}
+
+#info li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    list-style: inside;
+}
+
+/* Dining Options Section */
+.options {
+    border-top: 0.5px solid #666A86;
+}
+
+.options ul {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    display: flex;
+    margin-top: 2rem;
+    list-style: none;
+}
+
+.options li {
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    display: flex;
+    box-shadow: 0px 1px 3px rgba(128, 128, 128, 0.394);
+    padding: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+
+.options li i {
+    margin: 0 auto -1.5rem auto;
+    font-size: 2rem;
+}
+
+.options strong {
+    font-size: 1.125rem;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 0;
+    font-style: italic;
+}
+
+/* || SPA PAGE */
+
+.spa-card {
+    flex-direction: column;
+    flex: 1;
+    gap: 0.5rem;
+    display: flex;
+    box-shadow: 0px 1px 3px rgba(128, 128, 128, 0.394);
+    min-width: 320px;
+    padding: 1rem;
+}
+
+.spa-card h2 {
+    margin-top: 1rem;
+}
+
+.spa-card li {
+    margin-top: 0.5rem;
+}
+
+.spa-card img {
+    aspect-ratio: 1.618 / 1;
+    object-fit: cover;
+}
+
+/* || TESTIMONIALS PAGE */
+
+.testimonial {
+    max-height: 20rem;
+}
+
+#caption {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.fa-star {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+}
+
+#caption p {
+    font-size: 1.5rem;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    color: gray;
+}
+
+/* || MEDIA QUERIES */
+
+/* Mobile+ */
+@media screen and (min-width: 480px) {
+
+    /* General Styles */
+    .aBTN {
+        position: relative;
+        left: 50%;
+        display: inline-block;
+        transform: translateX(-50%);
+    }
+
+    /* Header & Nav */
+    #weather-widget {
+        flex-direction: row-reverse;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+    #navbar a:first-of-type {
+        order: -1;
+    }
+    #button-container {
+        justify-content: flex-end;
+        display: flex;
+        width: 150px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    /* Header & Nav */
+    nav {
+        top: 0;
+        border-left: 0.5px solid white;
+        width: 30%;
+    }
+    nav ul {
+        position: absolute;
+        top: 11.5%;
+        right: 0;
+        width: 100%;
+    }
+    nav li a {
+        text-align: right;
+        border: none;
+    }
+    #hero {
+        padding: 0 3rem;
+    }
+
+    /* Page Styling */
+    .options ul {
+        flex-direction: row;
+    }
+}
+
+/* Laptop */
+@media screen and (min-width: 1024px) {
+    /* Typography */
+    button {
+        font-size: 1.125rem;
+    }
+    /* Header & Nav */
+    #navbar {
+        padding: 0.75rem 2rem;
+    }
+    #navbar a:first-of-type img {
+        max-width: 200px;
+    }
+    #button-container {
+        display: none;
+    }
+    nav {
+        position: static;
+        overflow: visible;
+        border: none;
+        width: 200px;
+        height: auto;
+        backdrop-filter: none;
+    }
+    nav ul {
+        position: static;
+        justify-content: right;
+        display: flex;
+        gap: 1.5rem;
+    }
+    nav li a {
+        border-top: none;
+        padding: 0;
+    }
+    #current, nav li a:hover {
+        border-bottom: 1px solid ghostwhite;
+    }
+    #hero {
+        padding: 0 4rem;
+    }
+
+    /* Footer & Copyright */
+    footer {
+        padding: 0 2rem;
+    }
+
+    /* Page Styling */
+    main {
+        padding: 2rem;
+    }
+    .text-image {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        margin: auto;
+        max-width: 1920px;
+        padding: 4rem 0;
+    }
+    .text-image div {
+        flex: 38.2%;
+    }
+    .text-image img {
+        max-width: 61.8%;
+    }
+}
+
+
+/* Min Width */
+@media screen and (max-width: 320px) {
+    h1 {
+        color: red;
+    }
+}
+
+/* Max Width */
+@media screen and (min-width: 3200px) {
+    h1 {
+        color: red;
+    }
+}

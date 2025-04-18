@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shangri La Beach Resort - A Culinary Journey</title>
+    <link rel="icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header id="header-dining">
+        <div id="navbar">
+            <div id="weather-widget">
+                <img src="" alt="Weather icon" id="weatherIcon">
+                <p id="weatherTemp"></p>
+            </div>
+            <a href="/">
+                <img src="/images/logo.svg" alt="Shangri La" width="400">
+            </a>
+            <div id="button-container">
+                <button id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/rooms/">Rooms</a></li>
+                    <li><a href="/activities/">Activities</a></li>
+                    <li><a href="#" id="current">Dining</a></li>
+                    <li><a href="/spa/">Spa</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section id="hero">
+            <h1>A Culinary Journey</h1>
+            <p class="p1">Indulge in a diverse range of dining experiences at Shangri La Beach Resort. From elegant fine dining to casual beachfront bites, our restaurants and bars offer something to tantalize every taste bud and create unforgettable culinary moments.</p>
+        </section>
+    </header>
+    <main>
+        <section id="menu">
+            <menu>
+                <li><button class="tab-links" onclick="openTab(event, 'BeachHouse')" id="defaultOpen">The Beach House</button></li>
+                <li><button class="tab-links" onclick="openTab(event, 'SandBar')">The Sand Bar</button></li>
+                <li><button class="tab-links" onclick="openTab(event, 'PoolsideCafe')">The Poolside Cafe</button></li>
+                <li><button class="tab-links" onclick="openTab(event, 'LobbyLounge')">The Lobby Lounge</button></li>
+            </menu>
+        </section>
+        <section id="BeachHouse" class="tab-content">
+            <article class="text-image">
+                <div>
+                    <h2>The Beach House - Fine Dining with Ocean Views</h2>
+                    <p class="p2">Experience the epitome of culinary excellence at The Beach House. Our signature restaurant offers breathtaking panoramic ocean views, creating a romantic and sophisticated ambiance. Our talented chefs craft exquisite dishes using the freshest locally-sourced seafood and premium international ingredients. Indulge in innovative flavor combinations and impeccable service for a truly memorable fine dining experience. The Beach House is perfect for special occasions or a luxurious evening out.</p>
+                    <ul>
+                        <li>
+                            <strong>Cuisine:</strong>
+                            <p class="p2">Fine Dining, Seafood, International</p>
+                        </li>
+                        <li>
+                            <strong>Ambiance:</strong>
+                            <p class="p2">Elegant, Romantic, Oceanfront</p>
+                        </li>
+                        <li>
+                            <strong>Dress Code:</strong>
+                            <p class="p2">Smart Casual</p>
+                        </li>
+                        <li>
+                            <strong>Reservations Recommended</strong>
+                        </li>
+                    </ul>
+                </div>
+                <img src="/images/dining/dandy-suartama-zKN6Z-Jfnu8-unsplash.jpg" alt="" loading="lazy">
+            </article>
+        </section>
+        <section id="SandBar" class="tab-content">
+            <article class="text-image">
+                <div>
+                    <h2>The Sand Bar - Relaxed Beachfront Grill</h2>
+                    <p class="p2">For a more casual and laid-back dining experience, head to The Sand Bar. Situated right on the beach, this vibrant grill offers a relaxed atmosphere where you can enjoy delicious food with your toes in the sand. Savor grilled specialties, fresh salads, and satisfying sandwiches, all while soaking in the sun and enjoying the ocean breeze. The Sand Bar is the perfect spot for a casual lunch, a refreshing afternoon snack, or a relaxed dinner under the stars.</p>
+                    <ul>
+                        <li>
+                            <strong>Cuisine:</strong>
+                            <p class="p2">Casual, Grill, Seafood, American</p>
+                        </li>
+                        <li>
+                            <strong>Ambiance:</strong>
+                            <p class="p2">Relaxed, Beachfront, Informal</p>
+                        </li>
+                        <li>
+                            <strong>Dress Code:</strong>
+                            <p class="p2">Casual</p>
+                        </li>
+                        <li>
+                            <strong>No Reservations Required</strong>
+                        </li>
+                    </ul>
+                </div>
+                <img src="/images/dining/rafael-melo-lima-PkK0VYS1xjc-unsplash.jpg" alt="" loading="lazy">
+            </article>
+        </section>
+        <section id="PoolsideCafe" class="tab-content">
+            <article class="text-image">
+                <div>
+                    <h2>The Poolside Cafe - Refreshments and Light Bites</h2>
+                    <p class="p2">Stay refreshed and energized without leaving the poolside at The Poolside Cafe. This convenient and casual spot offers a variety of light bites, including salads, wraps, and snacks, as well as a wide selection of refreshing beverages, from tropical cocktails to chilled juices. It's the perfect place to grab a quick and tasty meal or a cool drink while enjoying the sun and the pool.</p>
+                    <ul>
+                        <li>
+                            <strong>Cuisine:</strong>
+                            <p class="p2">Casual, Light Bites, Snacks, Beverages</p>
+                        </li>
+                        <li>
+                            <strong>Ambiance:</strong>
+                            <p class="p2">Relaxed, Poolside, Informal</p>
+                        </li>
+                        <li>
+                            <strong>Dress Code:</strong>
+                            <p class="p2">Casual</p>
+                        </li>
+                        <li>
+                            <strong>No Reservations Required</strong>
+                        </li>
+                    </ul>
+                </div>
+                <img src="/images/dining/serenay-gulsen-s3tUdz9oNro-unsplash (1).jpg" alt="" loading="lazy">
+            </article>
+        </section>
+        <section id="LobbyLounge" class="tab-content">
+            <article class="text-image">
+                <div>
+                    <h2>The Lobby Lounge - Sophisticated Cocktails and Ambiance</h2>
+                    <p class="p2">Unwind and socialize in the elegant setting of The Lobby Lounge. This sophisticated lounge offers a curated selection of handcrafted cocktails, fine wines, and premium spirits. Enjoy light appetizers and small plates in a stylish atmosphere, often accompanied by live music in the evenings. The Lobby Lounge is the perfect place to start your evening, enjoy a nightcap, or simply relax and soak in the refined ambiance.</p>
+                    <ul>
+                        <li>
+                            <strong>Cuisine:</strong>
+                            <p class="p2">Beverages, Light Appetizers</p>
+                        </li>
+                        <li>
+                            <strong>Ambiance:</strong>
+                            <p class="p2">Sophisticated, Relaxed, Live Music (select evenings)</p>
+                        </li>
+                        <li>
+                            <strong>Dress Code:</strong>
+                            <p class="p2">Smart Casual</p>
+                        </li>
+                        <li>
+                            <strong>No Reservations Required</strong>
+                        </li>
+                    </ul>
+                </div>
+                <img src="/images/dining/zoshua-colah-Qr66Nq7ccuc-unsplash.jpg" alt="" loading="lazy">
+            </article>
+        </section>
+        <section class="options">
+            <h2 class="h2">Other Dining Options</h2>
+            <ul>
+                <li>
+                    <i class="fa fa-bell-concierge"></i>
+                    <br>
+                    <strong>Room Service</strong>
+                    <p class="p2">Enjoy the convenience of dining in the comfort and privacy of your own room with our extensive room service menu, available 24 hours a day.</p>
+                </li>
+                <li>
+                    <i class="fa fa-utensils"></i>
+                    <br>
+                    <strong>Buffet Breakfast</strong>
+                    <p class="p2">Start your day with a sumptuous buffet breakfast featuring a wide array of hot and cold dishes, fresh fruits, pastries, and more.</p>
+                </li>
+                <li>
+                    <i class="fa fa-asterisk"></i>
+                    <br>
+                    <strong>Special Dietary Options</strong>
+                    <p class="p2">We are committed to accommodating your dietary needs. Please inform us of any allergies or dietary restrictions, and our chefs will be happy to prepare customized meals for you.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <small>&copy; Copyright <span id="fYear">2025</span> Shangri La Beach Resort - All Rights Reserved</small>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
