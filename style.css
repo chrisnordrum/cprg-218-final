@@ -129,27 +129,27 @@ h2, h3, cite {
 
 /* Background Image */
 #header-home {
-    background-image: url(/images/hero/home.webp);
+    background-image: url(./images/hero/home.webp);
 }
 
 #header-rooms {
-    background-image: url(/images/hero/rooms.webp);
+    background-image: url(./images/hero/rooms.webp);
 }
 
 #header-activities {
-    background-image: url(/images/hero/activities.webp);
+    background-image: url(./images/hero/activities.webp);
 }
 
 #header-dining {
-    background-image: url(/images/hero/dining.webp);
+    background-image: url(./images/hero/dining.webp);
 }
 
 #header-spa {
-    background-image: url(/images/hero/spa.webp);
+    background-image: url(./images/hero/spa.webp);
 }
 
 #header-testimonials {
-    background-image: url(/images/hero/testimonials.webp);
+    background-image: url(./images/hero/testimonials.webp);
 }
 
 
