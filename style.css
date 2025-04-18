@@ -393,7 +393,7 @@ menu button.active {
 
 /* rooms-home */
 #rooms-home {
-    background-image: url(/images/roberto-nickson-RiOhen_OLPs-unsplash.jpg);
+    background-image: url(./images/hero/rooms.webp);
     background-size: cover;
     background-position: center;
     background-color: #464646;
