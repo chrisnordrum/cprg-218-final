@@ -19,6 +19,9 @@ li {
 }
 
 /* Buttons */
+summary {
+    cursor: pointer;
+}
 
 .aBTN {
     display: block;
@@ -50,13 +53,13 @@ h1 {
     font-style: italic;
 }
 
-h2, h3, cite, strong {
+h2, h3, summary, cite, strong {
     font-family: "Cormorant Garamond", serif;
     font-weight: 500;
     font-style: italic;
 }
 
-p, a {
+p, a, details li {
     font-family: "Poppins", sans-serif;
 }
 
@@ -70,7 +73,7 @@ a {
     text-align: center;
 }
 
-p {
+p, details li {
     font-size: 0.875rem;
     font-weight: 300;
 }
@@ -112,11 +115,11 @@ h1, .p1 {
     color: ghostwhite;
 }
 
-h2, h3, cite {
+h2, h3, strong, cite {
     color: #001514; /* Rich black */
 }
 
-.p2, .aBTN, small, .fa-quote-left, .fa-quote-right {
+.p2, details li, .aBTN, small, .fa-quote-left, .fa-quote-right {
     color: #666A86; /* Payne's gray */
 }
 
@@ -429,7 +432,16 @@ menu button.active {
 }
 
 #rooms-home p {
-    margin: 1rem 0;
+   margin: 1rem 0;
+}
+
+details ul {
+    margin-top: 1rem;
+}
+
+details li {
+    line-height: 1.5rem;
+    list-style: inside;
 }
 
 /* Testimonials */
