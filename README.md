@@ -4,7 +4,7 @@
 ## Attributions
 Web design and development by [Chris Nordrum](https://chrisnordrum.com/).
 
-Content provided by Shangri La Beach Resort.
+Content provided by Shangri La Beach Resort (Dan Stephenson).
 ![Shangri La](images/logo.svg)
 Weather data provided by [OpenWeather](https://openweathermap.org/).
 ![OpenWeather](images/OpenWeather-Master-Logo%20RGB.png)
