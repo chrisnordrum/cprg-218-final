@@ -10,6 +10,8 @@ Weather data provided by [OpenWeather](https://openweathermap.org/).
 ![OpenWeather](images/OpenWeather-Master-Logo%20RGB.png)
 Images provided by [Unsplash](https://unsplash.com/) and [Pixabay](https://pixabay.com/).
 
+
 Icons provided by [Font Awesome](https://fontawesome.com/).
+
 
 Fonts provided by [Google Fonts](https://fonts.google.com/).
