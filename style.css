@@ -40,6 +40,13 @@ summary {
 /* || TYPOGRAPHY */
 
 /* Font-size */
+h1 {
+    font-size: clamp(1.5rem, 5vw, 7rem);
+}
+
+h2 {
+    font-size: clamp(1.25rem, 2vw, 5rem);
+}
 
 a {
     font-weight: 300;
@@ -330,6 +337,9 @@ menu button {
 }
 
 menu button:hover {
+    display: block;
+    transform-origin: center center;
+    transition: all 0.2s ease-in-out;
     border-bottom: 4px solid #001514;
 }
 
@@ -744,20 +754,5 @@ cite {
     }
     .text-image img {
         max-width: 61.8%;
-    }
-}
-
-
-/* Min Width */
-@media screen and (max-width: 320px) {
-    h1 {
-        color: red;
-    }
-}
-
-/* Max Width */
-@media screen and (min-width: 3200px) {
-    h1 {
-        color: red;
     }
 }
