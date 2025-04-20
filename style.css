@@ -122,7 +122,7 @@ h1, .p1 {
     color: ghostwhite;
 }
 
-h2, h3, strong, cite {
+h2, h3, menu button, strong, cite {
     color: #001514; /* Rich black */
 }
 
@@ -231,7 +231,7 @@ header {
 
 /* Hamburger Animation */
 #hamburger.is-active .line:nth-child(1) {
-    transform: translateY(8.5px) rotate(45deg);
+    transform: translateY(8.5px) rotate(-45deg);
 }
 
 #hamburger.is-active .line:nth-child(2) {
@@ -239,7 +239,7 @@ header {
 }
 
 #hamburger.is-active .line:nth-child(3) {
-    transform: translateY(-8.5px) rotate(-45deg);
+    transform: translateY(-8.5px) rotate(45deg);
 }
 
 /* Navigation */
