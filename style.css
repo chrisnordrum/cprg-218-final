@@ -43,7 +43,13 @@ summary {
   'FILL' 0,
   'wght' 300,
   'GRAD' 0,
-  'opsz' 16;
+  'opsz' 20;
+}
+
+.icon-small {
+    font-variation-settings: 
+    'wght' 100,
+    'opsz' 10;
 }
 
 /* || TYPOGRAPHY */
@@ -75,7 +81,7 @@ h2, h3, summary, cite, strong {
     font-style: italic;
 }
 
-p, a, details li {
+p, .p2, a {
     font-family: "Poppins", sans-serif;
 }
 
@@ -89,7 +95,7 @@ a {
     text-align: center;
 }
 
-p, details li {
+p, .p2 {
     font-size: 0.875rem;
     font-weight: 300;
 }
@@ -317,10 +323,6 @@ section {
     padding-bottom: 1rem;
 }
 
-article {
-    padding-top: 5rem;
-}
-
 .center-align {
     text-align: center;
 }
@@ -329,7 +331,7 @@ article {
 menu {
     justify-content: space-between;
     display: flex;
-    border-bottom: 1px solid #001514;
+    border-bottom: 1px solid #666A86;
     list-style: none;
 }
 
@@ -396,6 +398,9 @@ menu button.active {
     object-fit: cover;
 }
 
+/* || HOMEPAGE */
+
+
 /* Moments Section */
 #moments {
     border-top: 0.5px dotted gray;
@@ -421,54 +426,75 @@ menu button.active {
     text-align: center;
 }
 
-/* rooms-home */
-#rooms-home {
-    background-image: url(./images/hero/rooms.webp);
+/* Accommodations */
+
+#accommodations {
+    background-image: url(images/hero/rooms.webp);
     background-size: cover;
     background-position: center;
-    background-color: #464646;
-    background-blend-mode: overlay;
+/*    background-color: #464646;
+    background-blend-mode: overlay; */
 }
 
-#rooms-home h2 {
+#accommodations h2 {
     padding-top: 5rem;
     color: ghostwhite;
 }
 
-#rooms-home article {
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    display: flex;
-    overflow: hidden;
+#accommodations .flexbox {
+    gap: 2rem;
+    padding: 0 1rem 4rem 1rem;
+}
+
+#accommodations article {
     box-shadow: 0px 1px 3px rgba(128, 128, 128, 0.394);
-    min-width: 320px;
-    height: 100%;
-    padding-top: 0;
+    max-width: 570px;
     background-color: ghostwhite;
 }
 
-#rooms-home img {
-    min-height: 100%;
+#accommodations article img {
     aspect-ratio: 1.618 / 1; /* Golden Ratio */
-    object-fit: cover;
 }
 
-#rooms-home div {
+#accommodations .card-text {
+    flex-direction: column;
+    gap: 1rem;
+    display: flex;
     padding: 2rem;
+    line-height: 1.7;
 }
 
-#rooms-home p {
-   margin: 1rem 0;
+#accommodations .card-text li {
+    display: inline;
+    vertical-align: middle;
+    color: #666A86;
 }
 
-details ul {
-    margin-top: 1rem;
+#accommodations .card-text li.p2, #accommodations button {
+    font-size: 0.75rem;
+    text-transform: uppercase;
 }
 
-details li {
-    line-height: 1.5rem;
-    list-style: inside;
+#accommodations .card-text div {
+    justify-content: space-between;
+    display: flex;
+    border-top: 0.75px solid #464646;
+    padding-top: 1rem;
+}
+
+#accommodations button {
+    justify-content: flex-end;
+    align-items: center;
+    display: inline-flex;
+    margin-right: -0.25rem;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    color: #5B8C5A;
+}
+
+#accommodations button:hover {
+    color: #004000;
 }
 
 /* Testimonials */
@@ -703,6 +729,10 @@ cite {
     }
 
     /* Page Styling */
+    #accommodations article {
+        max-width: 300px;
+    }
+
     .options ul {
         flex-direction: row;
     }
@@ -711,7 +741,7 @@ cite {
 /* Laptop */
 @media screen and (min-width: 1024px) {
     /* Typography */
-    button {
+    menu button {
         font-size: 1.125rem;
     }
     /* Header & Nav */
@@ -771,6 +801,10 @@ cite {
     }
     .text-image img {
         max-width: 61.8%;
+    }
+
+    #accomodations article {
+        max-width: 350px;
     }
 }
 

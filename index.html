@@ -7,6 +7,7 @@
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=accessible,add,arrow_forward_ios,beach_access,bed,chair,deceased,google_home_devices,hot_tub,hotel_class,info,king_bed,local_bar,restaurant,room_service,scene,shower,tv,water_lux,wifi"/>
 </head>
 
 <body>
@@ -76,65 +77,79 @@
                 </div>
             </div>
         </section>
-        <section id="rooms-home">
+        <section id="accommodations">
             <h2 class="h2">Our Luxurious Accommodations</h2>
             <div class="flexbox">
                 <article>
                     <img src="images/rooms/ocean-view.webp" alt="Ocean View Deluxe Room" loading="lazy">
-                    <div>
+                    <div class="card-text">
                         <h3>Ocean View Deluxe Room</h3>
+                        <ul>
+                            <li class="material-symbols-outlined">king_bed</li>
+                            <li class="p2">1 Bed</li>
+                            <li class="material-symbols-outlined">water_lux</li>
+                            <li class="p2">Ocean View</li>
+                        </ul>
                         <p class="p2">Enjoy stunning ocean views from your private balcony.</p>
-                        <details>
-                            <summary>View Details</summary>
+                        <div>
                             <ul>
-                                <li>King-sized bed</li>
-                                <li>Private balcony with ocean view</li>
-                                <li>En-suite bathroom with rain shower</li>
-                                <li>Seating area</li>
-                                <li>Complimentary Wi-Fi</li>
-                                <li>Flat-screen TV</li>
-                                <li>Mini-bar</li>
+                                <li class="material-symbols-outlined">tv</li>
+                                <li class="material-symbols-outlined">wifi</li>
+                                <li class="material-symbols-outlined">local_bar</li>
                             </ul>
-                        </details> 
+                            <button onclick="newTab()">
+                                View Details
+                                <i class="material-symbols-outlined icon-small">arrow_forward_ios</i>
+                            </button> 
+                        </div>
                     </div>
                 </article>
                 <article>
                     <img src="images/rooms/beachfront.webp" alt="Beachfront Suite" loading="lazy">
-                    <div>
+                    <div class="card-text">
                         <h3>Beachfront Suite</h3>
+                        <ul>
+                            <li class="material-symbols-outlined">king_bed</li>
+                            <li class="p2">1 Bed</li>
+                            <li class="material-symbols-outlined">beach_access</li>
+                            <li class="p2">Beach Access</li>
+                        </ul>
                         <p class="p2">Step directly onto the sand from your spacious suite.</p>
-                        <details>
-                            <summary>View Details</summary>
+                        <div>
                             <ul>
-                                <li>King-sized bed</li>
-                                <li>Separate living area</li>
-                                <li>Private terrace with direct beach access</li>
-                                <li>En-suite bathroom with soaking tub and separate shower</li>
-                                <li>Dining area</li>
-                                <li>Complimentary Wi-Fi</li>
-                                <li>Multiple flat-screen TVs</li>
-                                <li>Mini-bar</li>
+                                <li class="material-symbols-outlined">tv</li>
+                                <li class="material-symbols-outlined">wifi</li>
+                                <li class="material-symbols-outlined">local_bar</li>
                             </ul>
-                        </details> 
+                            <button onclick="newTab()">
+                                View Details
+                                <i class="material-symbols-outlined icon-small">arrow_forward_ios</i>
+                            </button>
+                        </div>
                     </div>
                 </article>
                 <article>
                     <img src="images/rooms/garden-view.webp" alt="Garden View Family Room" loading="lazy">
-                    <div>
-                        <h3>Garden View Family Room</h3> 
-                   <p class="p2">Perfect for families, with ample space and garden views.</p>
-                   <details>
-                    <summary>View Details</summary>
-                    <ul>
-                        <li>Two double beds</li>
-                        <li>Private balcony with garden view</li>
-                        <li>En-suite bathroom</li>
-                        <li>Seating area</li>
-                        <li>Complimentary Wi-Fi</li>
-                        <li>Flat-screen TV</li>
-                        <li>Mini-bar</li>
-                    </ul>
-                   </details>
+                    <div class="card-text">
+                        <h3>Garden View Family Room</h3>
+                        <ul>
+                            <li class="material-symbols-outlined">bed</li>
+                            <li class="p2">2 Beds</li>
+                            <li class="material-symbols-outlined">deceased</li>
+                            <li class="p2">Garden View</li>
+                        </ul> 
+                        <p class="p2">Perfect for families, with ample space and garden views.</p>
+                        <div>
+                            <ul>
+                                <li class="material-symbols-outlined">tv</li>
+                                <li class="material-symbols-outlined">wifi</li>
+                                <li class="material-symbols-outlined">local_bar</li>
+                            </ul>
+                            <button onclick="newTab()">
+                                View Details
+                                <i class="material-symbols-outlined icon-small">arrow_forward_ios</i>
+                            </button>
+                        </div>
                     </div>
                 </article> 
             </div>

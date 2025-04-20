@@ -63,3 +63,12 @@ function openTab2(evt, roomName) {
 }
 
 document.getElementById("defaultOpen2").click();
+
+// Accommodations Buttons
+function newTab() {
+  window.location = "rooms/";
+  // Now redirect to tab
+}
+
+// Footer Copyright
+document.getElementById("fYear").textContent = new Date().getFullYear();
