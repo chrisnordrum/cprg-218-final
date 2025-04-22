@@ -56,7 +56,7 @@ summary {
 
 /* Font-size */
 h1 {
-    font-size: clamp(1.5rem, 5vw, 7rem);
+    font-size: clamp(1.5rem, 7vw, 7rem);
 }
 
 h2 {
@@ -71,7 +71,7 @@ a {
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 h1 {
-    font-family: "EB Garamond", serif;
+    font-family: "Cormorant Garamond", serif;
     font-style: italic;
 }
 
@@ -109,7 +109,7 @@ p, .p2 {
 }
 
 menu button {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
@@ -196,7 +196,8 @@ header {
     align-items: center;
     display: flex;
     padding: 0.75rem 1rem;
-    background-color: rgb(0, 0, 0, 0.05);
+/*    background-color: rgb(0, 0, 0, 10%);*/
+    background: linear-gradient(180deg, #000, rgba(0, 0, 0, 0) 100%);
 }
 
 /* Weather Widget */
@@ -267,6 +268,7 @@ nav {
     transition: 0.5s ease-in-out;
     width: 100%;
     height: 0;
+    background-color: rgb(0, 0, 0, 10%);
     backdrop-filter: blur(10px);
 }
 
@@ -331,7 +333,7 @@ section {
 menu {
     justify-content: space-between;
     display: flex;
-    border-bottom: 1px solid #666A86;
+    border-bottom: 1px solid lightgray;
     list-style: none;
 }
 
@@ -549,6 +551,10 @@ cite {
 /* || ACTIVITIES PAGE */
 .tab-content h3, .tab-content2 h3 {
     display: none;
+}
+
+.tab-content .flexbox, .tab-content2 .flexbox {
+    padding-top: 5rem;
 }
 
 .tab-content .flexbox li, .tab-content2 .flexbox li {
