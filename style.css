@@ -287,7 +287,6 @@ nav li a {
 /* Nav Animation */
 nav.active {
     height: 100vh;
-    text-decoration: none;
 }
 
 /* Header Text */
@@ -411,7 +410,7 @@ menu button.active {
 #moments .flexbox {
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 1rem;
     display: flex;
     margin-top: 2rem;
