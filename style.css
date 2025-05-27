@@ -56,11 +56,11 @@ summary {
 
 /* Font-size */
 h1 {
-    font-size: clamp(1.5rem, 7vw, 7rem);
+    font-size: clamp(2rem, 7vw, 7rem);
 }
 
 h2 {
-    font-size: clamp(1.25rem, 2vw, 5rem);
+    font-size: clamp(1.5rem, 2vw, 5rem);
 }
 
 a {
@@ -129,25 +129,25 @@ small {
 
 /* Background */
 main, footer {
-    background-color: ghostwhite;
+    background-color: #e8f1f2;
 }
 
 /* Text */
 h1, .p1 {
-    color: ghostwhite;
+    color: #e8f1f2;
 }
 
 h2, h3, menu button, strong, cite {
-    color: #001514; /* Rich black */
+    color: #13293d; /* Rich black */
 }
 
 .p2, details li, .aBTN, small, .fa-quote-left, .fa-quote-right {
-    color: #666A86; /* Payne's gray */
+    color: #4f6d7a; /* Payne's gray */
 }
 
 /* Accent */
 .material-symbols-outlined, .fa-umbrella-beach, .fa-water-ladder, .fa-hand-sparkles, .fa-utensils, .fa-bell-concierge, .fa-asterisk, .fa-star {
-    color: #5B8C5A; /* Sea Green */
+    color: #006494; /* Sea Green */
 }
 
 /* || HEADER AND NAVIGATION */
@@ -424,6 +424,7 @@ menu button.active {
     box-shadow: 0px 1px 3px rgba(128, 128, 128, 0.394);
     min-width: 200px;
     padding: 1rem;
+    background-color: #c0d6df28;
     text-align: center;
 }
 
@@ -717,6 +718,10 @@ cite {
     nav {
         top: 0;
         border-left: 0.5px solid white;
+        width: 0;
+        height: 100vh;
+    }
+    nav.active {
         width: 30%;
     }
     nav ul {
@@ -768,9 +773,12 @@ cite {
         transition: none;
         border: none;
         width: 200px;
-        height: auto;
+        height: 100%;
         background: transparent;
         backdrop-filter: none;
+    }
+    nav.active {
+        height: fit-content;
     }
     nav ul {
         position: static;

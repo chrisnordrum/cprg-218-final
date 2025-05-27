@@ -1,0 +1,693 @@
+/* || BASE */
+
+
+/* | CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+
+/* | Typography */
+h1 {
+    font-size: clamp(2rem, 5vw, 7rem);
+}
+
+h1 span {
+    font-size: 75%;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h2 {
+    margin: 4rem 0;
+
+    font-size: clamp(1.5rem, 2.5vw, 5rem);
+    font-weight: 600;
+    text-align: center;
+}
+
+h3 {
+    font-size: clamp(1.17rem, 2.5vw, 1.5rem);
+    font-weight: 600;
+}
+
+.details {
+    font-size: 0.75rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h1, h2, h3, strong, cite, .caption p {
+    font-family: "Cormorant Garamond", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    font-style: italic;
+}
+
+p, a, button, .details, small {
+    font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a, button, .details {
+    text-transform: uppercase;
+}
+
+
+/* | Colour Palette */
+h2, h3, menu button, strong, cite, .room-button:hover, .room-button:hover i, .testimonial-button:hover, fa {
+    color: #13293D; /* Prussian Blue */
+}
+
+p, .card-text li, .caption p, small {
+    color: #4F6D7A; /* Payne's Gray */
+}
+
+body, #hamburger .line, main, .card-room, footer {
+    background-color: #E8F1F2; /* Alice Blue */
+}
+
+#nav a, #weatherTemp, #hero, #accommodations h2 {
+    color: #E8F1F2;
+}
+
+.weather-location i, .weather-location p, #weatherDesc, #hero p {
+    color: #B9C0C1;
+}
+
+.material-symbols-outlined, .room-button, .testimonial-button, .fa {
+    color: #006494; /* Lapis Lazuli */
+}
+
+
+/* | Photography */
+img {
+    max-width: 100%;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        max-width: 200px;
+    }
+}
+
+.golden-ratio {
+    aspect-ratio: 1.618 / 1;
+}
+
+
+/* | Iconography */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 20;
+}
+
+.weather-location i {
+    margin-left: -0.2rem;
+    font-size: 0.75rem;
+}
+
+.card-icon i {
+    font-size: 3rem;
+    font-variation-settings: 
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 20;
+}
+
+.fa-quote-left, .fa-quote-right {
+    font-size: 1.5rem;
+}
+
+
+/* | Graphic Elements */
+
+/* Buttons */
+button {
+    cursor: pointer;
+}
+
+.room-button {
+    align-items: center;
+    display: flex;
+
+    border: none;
+
+    background-color: inherit;
+}
+
+.testimonial-button {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin: 4rem auto;
+    border: 1px solid #006494;
+    padding: 1rem;
+    
+    text-decoration: none;
+}
+
+.testimonial-button:hover {
+    border: 1px solid #13293D;
+}
+
+
+
+/* || LAYOUT */
+
+/* | Header */
+
+header {
+    flex-direction: column;
+    display: flex;
+
+    min-height: 100vh;
+
+    background-color: #464646;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+/* Header Background */
+#header-home {
+    background-image: url(./images/hero/home.webp);
+}
+
+#header-rooms {
+    background-image: url(./images/hero/rooms.webp);
+}
+
+#header-activities {
+    background-image: url(./images/hero/activities.webp);
+}
+
+#header-dining {
+    background-image: url(./images/hero/dining.webp);
+}
+
+#header-spa {
+    background-image: url(./images/hero/spa.webp);
+}
+
+#header-testimonials {
+    background-image: url(./images/hero/testimonials.webp);
+}
+
+/* Navbar */
+#navbar {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+
+    display: flex;
+
+    padding: 0.75rem 1rem;
+
+    background: linear-gradient(180deg, #000, rgba(97, 97, 97, 0) 100%); 
+}
+
+@media screen and (min-width: 1024px) {
+    #navbar {
+        padding: 1rem 1.5rem;
+    }
+    #navbar a:first-of-type {
+        order: -1;
+    }
+}
+
+/* Hero Section */
+#hero-text {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+
+/* | Footer */
+footer {
+    margin: 0 2rem;
+    border-top: 0.5px solid #13293D;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* | Main */
+main {
+    padding: 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        padding: 0 2rem;
+    }
+}
+
+/* | Section Classes */
+.pad-btm {
+    padding-bottom: 4rem;
+}
+
+.brdr-top {
+    border-top: 0.5px solid #13293D;
+}
+
+/* | Text-Image Section */
+.text-image {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+
+    gap: 4rem;
+    padding-bottom: 4rem;
+}
+
+.text-image h2 {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .text-image {
+        flex-direction: row;
+
+        gap: 2rem;
+        padding-top: 4rem;
+    }
+
+    .text-image h2 {
+        text-align: left;
+    }
+
+    .text-image img {
+        max-width: 61.8%;
+    }
+}
+
+/* | Flexbox */
+.flexbox {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+
+    display: flex;
+
+    gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .flexbox {
+        gap: 2rem;
+    }
+}
+
+/* | Home Page */
+
+/* Accommodations Section */
+#accommodations {
+    margin: 0 -1rem;
+    padding: 0.5rem 1rem 4rem 1rem;
+    background-color: #13293D;
+}
+
+@media screen and (min-width: 768px) {
+    #accommodations {
+        margin: 0 -2rem;
+        padding: 0.5rem 2rem 4rem 2rem;
+    }
+}
+
+/* | Rooms Page */
+
+
+
+/* || MODULES */
+
+
+/* | Header and Navigation */
+
+/* Weather Widget */
+.weather-widget {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    min-width: 50px;
+    min-height: 50px;
+/*    padding: 0.2rem 0.5rem;*/
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(20px);
+}
+
+.weather-location, #weatherDesc {
+    display: none;
+}
+
+#weatherIcon {
+/*    margin-bottom: -0.688rem;*/
+    margin-bottom: -0.4rem;
+    max-width: 35px;
+}
+
+#weatherTemp {
+
+}
+
+@media screen and (min-width: 480px) {
+    .weather-widget {
+        flex-direction: row;
+        gap: 0.5rem;
+        min-height: auto;
+        padding-left: 0.5rem;
+    }
+    #weatherIcon {
+        margin: auto;
+    }
+    #weatherTemp {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .weather-widget {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 3rem;
+        padding: 0.2rem 0.5rem;
+    }
+    #weatherIcon {
+        margin: -0.5rem auto;
+    }
+    .weather-location, #weatherDesc {
+        grid-column: span 2;
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+    .weather-location {
+        display: inline-flex;
+        align-items: center;
+    }
+    #weatherDesc {
+        display: block;
+        text-align: right;
+        text-transform: capitalize;
+    }
+}
+
+/* Hamburger Button */
+#button-container {
+    justify-content: flex-end;
+    display: flex;
+    width: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+    #button-container{
+        display: none;
+    }
+}
+
+#hamburger {
+    z-index: 2;
+    border: none;
+    background: none;
+}
+
+#hamburger .line {
+    display: block;
+    transition: all 0.3s ease-in-out;
+
+    margin: 6px;
+    border-radius: 2px;
+    width: 25px;
+    height: 2.5px;
+}
+
+/* Navigation */
+#nav {
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+
+    width: 100%;
+    height: 0;
+
+    background-color: rgb(0, 0, 0, 10%);
+    backdrop-filter: blur(10px);
+}
+
+#nav a {
+    display: block;
+
+    border-top: 0.5px solid #E8F1F2;
+    padding: 1.5rem;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    #nav {
+        top: 0;
+
+        border-left: 0.5px solid #E8F1F2;
+        width: 0;
+        height: 100vh;
+    }
+
+    #nav ul {
+        position: absolute;
+        top: 11.5%;
+        right: 0;
+
+        width: 100%;
+
+        list-style: none;
+    }
+
+    #nav a {
+        border: none;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #nav {
+        position: static;
+        overflow: visible;
+        transition: none;
+
+        border: none;
+        width: 200px;
+        height: 100%;
+
+        background: transparent;
+        backdrop-filter: none;
+    }
+    #nav ul {
+        position: static;
+        justify-content: right;
+
+        display: flex;
+        gap: 1.5rem;
+    }
+    #nav a {
+        padding: 0;
+    }
+    #nav a#current, #nav a:hover {
+        border-bottom: 1px solid #E8F1F2;
+    }
+}
+
+
+/* | Card */
+.card {
+    box-shadow: 0px 1px 3px rgba(128, 128, 128, 0.394);
+}
+
+.card-text {
+    flex-direction: column;
+    display: flex;
+
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.card-text li {
+    vertical-align: middle;
+    display: inline;
+}
+
+.card-text .details:nth-child(2) {
+    margin-right: 1rem;
+}
+
+.card-text p {
+    line-height: 1.7;
+}
+
+.card-footer {
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+
+    border-top: 1px solid #4F6D7A;
+    padding-top: 1rem;
+}
+
+/* Icon Card */
+.card-icon {
+    flex-grow: 1;
+    max-width: 275px;
+    text-align: center;
+}
+
+@media screen and (min-width: 684px) and (max-width: 1260px) {
+    .card-icon:first-of-type, .card-icon:last-of-type {
+        max-width: 582px;
+    }
+
+    .flexbox {
+        margin: 0 auto;
+        max-width: 857px;
+    }
+}
+
+/* Room Card */
+.card-room {
+    flex-grow: 1;
+    box-shadow: none;
+    max-width: 400px;
+}
+
+@media screen and (min-width: 896px) and (max-width: 1391px) {
+    .card-room:last-of-type {
+        align-items: center;
+        display: flex;
+
+        max-width: 832px;
+
+    }
+    .card-room:last-of-type img {
+        max-width: 432px;
+
+    }
+}
+
+/* Testimonial Card */
+.card-testimonial {
+    max-width: 500px;
+}
+
+.card-testimonial blockquote {
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+}
+
+.fa-quote-right {
+    align-self: flex-end;
+}
+
+@media screen and (min-width: 480px) {
+    .card-testimonial {
+        align-items: center;
+        display: flex;
+    }
+
+    .card-testimonial img {
+        max-width: 38.2%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+/* | Caption */
+.caption {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.caption i {
+    margin-bottom: 1rem;
+}
+
+
+
+/* || STATE */
+
+
+/* Nav Menu */
+#nav.is-expanded {
+    height: 100vh; /* Opens from top */
+}
+
+@media screen and (min-width: 768px) {
+    #nav.is-expanded {
+        width: 30%; /* Opens from right */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #nav.is-expanded {
+        height: fit-content; /* Closes Nav when screen extends */
+    }
+}
+
+
+/* Hamburger Icon changes to "X" Icon */
+#hamburger.is-active .line:nth-child(1) {
+    transform: translateY(8.5px) rotate(-45deg);
+}
+
+#hamburger.is-active .line:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger.is-active .line:nth-child(3) {
+    transform: translateY(-8.5px) rotate(45deg);
+}
+
+
+/*  */
+.tab-links.active {
+    border-bottom: 4px solid #001514;
+    font-weight: 500;
+}
+
+
+
+/* || THEME */
+
+
+/* || All CSS is written by Chris Nordrum */

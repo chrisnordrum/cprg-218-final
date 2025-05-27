@@ -3,8 +3,8 @@ const mainMenu = document.getElementById('nav');
 const hamburger = document.getElementById('hamburger');
 
 hamburger.addEventListener('click', function() {
+    mainMenu.classList.toggle('is-expanded');
     this.classList.toggle('is-active');
-    mainMenu.classList.toggle('active');
 });
 
 // Weather Widget
@@ -13,7 +13,8 @@ fetch("https://api.openweathermap.org/data/2.5/weather?q=cancun&appid=810758b254
 .then(data => {
     console.log(data);
     weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    weatherTemp.textContent = Math.round(data.main.temp) + "\u00b0C";
+    weatherTemp.textContent = Math.round(data.main.temp) + "\u00b0";
+    weatherDesc.textContent = data.weather[0].description;
 })
 
 // Menu Tabs
