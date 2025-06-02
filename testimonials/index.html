@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shangri La Beach Resort - What Our Guests Are Saying</title>
     <link rel="icon" href="../images/favicon.png">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on"/>
 </head>
 
 <body>
     <header id="header-testimonials">
         <div id="navbar">
-            <div id="weather-widget">
-                <img src="" alt="Weather icon" id="weatherIcon">
-                <p id="weatherTemp"></p>
+            <div id="widget-container">
+                <div class="weather-widget">
+                    <div class="weather-location">
+                        <i class="material-symbols-outlined">location_on</i>
+                        <p>Cancún</p>
+                    </div>
+                    <p id="weatherTemp"></p>
+                    <img src="" alt="Weather icon" id="weatherIcon">
+                    <p id="weatherDesc"></p>
+                </div>
             </div>
             <a href="../">
-                <img src="../images/logo.svg" alt="Shangri La" width="400">
+                <img src="../images/logo.svg" alt="Shangri La" class="logo" width="400">
             </a>
             <div id="button-container">
                 <button id="hamburger">
@@ -37,16 +45,18 @@
             </nav>
         </div>
         <section id="hero">
-            <h1>What Our Guests Are Saying</h1>
-            <p class="p1">Read about the wonderful experiences our guests have had at Shangri La Beach Resort.</p>
+            <div id="hero-text">
+                <h1>What Our Guests Are Saying</h1>
+                <p>Read about the wonderful experiences our guests have had at Shangri La Beach Resort.</p> 
+            </div>
         </section>
     </header>
     
-    <main>
+    <main class="pad-top">
         <section class="flexbox">
-            <figure class="testimonial">
+            <figure class="card card-testimonial card-testimonial">
                 <img src="../images/testimonials/sarah-m.webp" alt="Sarah M.">
-                <figcaption>
+                <figcaption class="card-text">
                     <blockquote>
                         <i class="fa fa-quote-left"></i>
                         <p>Our stay at Shangri La was absolutely perfect! The service was impeccable, the food was delicious, and the views were breathtaking. We especially loved relaxing by the infinity pool. We can't wait to return!</p>
@@ -55,9 +65,9 @@
                     </blockquote>
                 </figcaption>
             </figure>
-            <figure class="testimonial">
+            <figure class="card card-testimonial">
                 <img src="../images/testimonials/john-b.webp" alt="John B.">
-                <figcaption>
+                <figcaption class="card-text">
                     <blockquote>
                         <i class="fa fa-quote-left"></i>
                         <p>The beachfront suite was amazing! Waking up to the sound of the waves and stepping right onto the sand was incredible. The resort offered so many activities, we never had a dull moment. Highly recommend the snorkeling!</p>
@@ -66,9 +76,9 @@
                     </blockquote>
                 </figcaption>
             </figure>
-            <figure class="testimonial">
+            <figure class="card card-testimonial">
                 <img src="../images/testimonials/emily-k.webp" alt="Emily K.">
-                <figcaption>
+                <figcaption class="card-text">
                     <blockquote>
                         <i class="fa fa-quote-left"></i>
                         <p>We traveled with our two young children, and the Kids' Club was a lifesaver! The staff were fantastic, and our kids had a blast. This allowed us some much-needed relaxation time. The resort is very family-friendly.</p>
@@ -77,9 +87,9 @@
                     </blockquote>
                 </figcaption>
             </figure>
-            <figure class="testimonial">
+            <figure class="card card-testimonial">
                 <img src="../images/testimonials/david-l.webp" alt="David L.">
-                <figcaption>
+                <figcaption class="card-text">
                     <blockquote>
                         <i class="fa fa-quote-left"></i>
                         <p>The spa experience was divine. The therapists were skilled, and the atmosphere was so peaceful. It was the perfect way to unwind and de-stress. We left feeling completely rejuvenated.</p>
@@ -88,9 +98,9 @@
                     </blockquote>
                 </figcaption>
             </figure>
-            <figure class="testimonial">
+            <figure class="card card-testimonial">
                 <img src="../images/testimonials/jessica-p.webp" alt="Jessica P.">
-                <figcaption>
+                <figcaption class="card-text">
                     <blockquote>
                         <i class="fa fa-quote-left"></i>
                         <p>From the moment we arrived, the staff made us feel welcome and well taken care of. The attention to detail was outstanding. Shangri La truly lives up to its name - a little slice of paradise!</p>
@@ -100,7 +110,7 @@
                 </figcaption>
             </figure>
         </section>
-        <div id="caption">
+        <div class="caption">
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
             <i class="fa fa-star"></i>
